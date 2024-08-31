@@ -1,0 +1,303 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header {
+    background-color: #f8f8f8;
+    padding: 10px 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: calc(100% - 40px); 
+    z-index: 1000;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navigation ul li:first-child {
+    margin-left: 0;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.15;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.15;
+}
+
+h3 {
+    font-weight: 100;
+    font-size: 23px;
+    line-height: 1.15;
+}
+
+p {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.15;
+}
+
+/* About Section Styles */
+.about {
+    padding: 50px 20px;
+    text-align: left;
+    background-color: #f0f0f0;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-heading {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.products,
+.products-vege,
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+/* Products Section Styles */
+.products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.product-category h2 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-size: 32px;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Product Styles */
+
+
+.product {
+    width: 300px;
+    margin: 20px;
+    padding: 30px; 
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+.product p {
+    padding: 10px 0;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    padding: 10px 0;
+}
+
+.price-add-to-cart {
+    margin-top: 10px;
+}
+
+.price,
+.add-to-cart {
+    width: 100%;
+}
+
+.price {
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    background-color: #4CAF50;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #45a049;
+}
+
+
+/* Remove Border from Product Category */
+.product-category {
+    width: 300px;
+    margin: 20px;
+    padding: 30px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.product-category img {
+    max-width: 100%;
+    height: 300px;
+}
+
+/* products-vege Section Area Styles */
+.products-vege {
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.products-vege-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* Contact Section Styles */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact p {
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Back to Top Button Styles */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: #555;
+}
+
+.back-to-top.show {
+    display: block;
+}
+
+
+@media screen and (max-width: 650px) {
+    /* Add responsive styles for screens wider than 650px */
+    /* Header Styles */
+    .header {
+        background-color: rgba(248, 248, 248, 0.8); /* Semi-transparent background */
+        padding: 10px 20px;
+        justify-content: space-between;
+        align-items: center;
+        position: static;
+        width: 100%;
+        z-index: 1000;
+        transition: padding 0.3s ease; /* Smooth transition for padding changes */
+    }
+
+    .logo img {
+        max-width: 80px; /* Adjust the logo size */
+    }
+
+    .navigation {
+        display: none; /* Hide navigation links by default on small screens */
+    } 
+
+}
+
